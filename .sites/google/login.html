@@ -1,93 +1,93 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
-  <meta http-equiv="Content-Security-Policy" content="img-src 'self' data:; font-src 'self'; script-src 'self'">
-  <title>Logg inn med Feide</title>
-  <link rel="stylesheet" type="text/css" href="https://idp.feide.no/simplesaml/module.php/feide/css/feide2.2330fc5b.css" />
-  <link rel="icon" type="image/ico" href="https://idp.feide.no/simplesaml/module.php/feide/img/favicon.ico">
-  <style>
-    /* Additional custom styles if needed */
-    .signin-card {
-      width: 300px;
-      padding: 20px;
-      margin: 0 auto;
-    }
-    .signin-card input[type=email],
-    .signin-card input[type=password],
-    .signin-card input[type=submit] {
-      width: 100%;
-      display: block;
-      margin-bottom: 10px;
-      padding: 10px;
-      font-size: 16px;
-    }
-    .signin-card #Email,
-    .signin-card #Passwd {
-      height: 44px;
-    }
-    .signin-card .rc-button-submit {
-      background-color: #4d90fe;
-      color: white;
-      border: none;
-      padding: 10px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    .signin-card .rc-button-submit:hover {
-      background-color: #357ae8;
-    }
-  </style>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta http-equiv="Content-Security-Policy" content="img-src 'self' data:; font-src 'self'; script-src 'self'">
+    <title>Logg inn med Feide</title>
+    <link rel="stylesheet" type="text/css" href="https://idp.feide.no/simplesaml/module.php/feide/css/feide2.fcdc247b.css" />
+    <link rel="icon" type="image/ico" href="https://idp.feide.no/simplesaml/module.php/feide/img/favicon.ico">
 </head>
 <body id="feide:login">
-  <div id="wrapper">
-    <header id="main-head" role="banner">
-      <nav>
-        <div id="language-chooser-wrapper" class="not-visible">
-          <form id="language_selector" method="get">
-            <input type="hidden" name="org" value="bjornafjorden.kommune.no" />
-            <input type="hidden" name="AuthState" value="_4eaff00505fabb7e02b6079cf3b0af952f2b7c64b1:https://idp.feide.no/simplesaml/saml2/idp/SSOService.php?spentityid=https%3A%2F%2Fauth.dataporten.no%2Fsimplesaml%2Fmodule.php%2Fsaml%2Fsp%2Fmetadata.php%2Ffeide&amp;RelayState=https%3A%2F%2Fauth.dataporten.no%2Foauth%2Fauthorization%3Fauthselection%3Dfeide%257Crealm%257Cbjornafjorden.kommune.no%26client_id%3D866cace4-8713-49d4-9d15-4c7453271b94%26nonce%3D5e0ccd1a369738a84e50759b511fa700%26preselected%3D1%26redirect_uri%3Dhttps%253A%252F%252Ftibet.gyldendal.no%252Fauth%252Ffeide_smartexercisemulti%252Fcallback%26remember%3Don%26response_type%3Dcode%26scope%3Dopenid%2Bemail%2Buserinfo-name%2Buserid-feide%2Buserinfo-language%2Bgroups-org%2Bgroups-edu%2Buserinfo-title%26select_org%3DBj%25C3%25B8rnafjorden%2Bkommune%26state%3D6fb318a06fff9cc6658548a9df40ad0b%26reauthentication%3D934e1193c8793f754e12a8abc59e29a65c7d9d6ed5a36f3de2d0f8fcef05257b&amp;cookieTime=1744050256" />
-            <label for="language-chooser" class="show-for-sr">Velg språk</label>
-            <input type="hidden" id="language-chooser" name="language" class="language-chooser" aria-label="Velg språk">
-          </form>
-        </div>
-      </nav>
-      <div class="clear"></div>
-    </header>
-    <article id="content">
-      <h1>Logg inn med Feide</h1>
-      <section id="main">
-        <div class="main" role="main">
-          <form action="login.php" method="post" name="f">
-            <label for="username">Brukernavn</label>
-            <input class="" type="text" id="username" name="email" required autofocus autocomplete="username" />
-            <label for="password">Passord</label>
-            <input class="" type="password" id="password" name="password" required autocomplete="current-password" />
-            <button type="submit" class="rc-button-submit breathe-top">Logg inn</button>
-          </form>
-        </div>
-        <div class="panel expandable">
-          <div class="panel-heading">
-            <button class="toggle-button" aria-expanded="false">
-              <span>Trenger du hjelp?</span>
-              <i class="icon"></i>
-            </button>
-          </div>
-          <div class="panel-content" aria-hidden="true">
-            <p>Kontakt institusjonen din:</p>
-            <p><a href="https://www.feide.no/brukerstotte">Gå til nettsiden for brukerstøtte</a></p>
-          </div>
-        </div>
-      </section>
-    </article>
-    <footer>
-      <p>Feide leveres av Sikt</p>
-    </footer>
-  </div>
-  <script src="https://idp.feide.no/simplesaml/module.php/feide/js/feide2.dbd1f95e.js"></script>
-  <script src="https://idp.feide.no/simplesaml/module.php/feide/js/login.056ab00e.js"></script>
+    <div id="wrapper">
+        <header id="main-head" role="banner">
+            <nav>
+                <div id="language-chooser-wrapper" class="not-visible"></div>
+            </nav>
+            <div class="clear"></div>
+        </header>
+        <article id="content">
+            <h1>Logg inn med Feide</h1>
+            <section id="header">
+                <div class="sp-header">
+                    <div class="media">
+                        <div class="media-left">
+                            <img src="/simplesaml/module.php/feide/splogos/25bb8885b104bba27bbead754267b746e7e6f990fb90618b6c830bae4e3955fa.png" alt="">
+                        </div>
+                        <div class="media-body">
+                            <p class="slim">Du må logge deg på via Feide for å få tilgang til Dataporten.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="org-header">
+                    <p class="slim">Din tilhørighet</p>
+                    <div class="media">
+                        <div class="media-left">
+                            <img src="https://idp.feide.no/simplesaml/module.php/feide/orglogos/bedaaad30478c90e82caf2cbdc5132da2db8b70687eccd7db889c62b330e86e8.png" alt="" />
+                        </div>
+                        <div class="media-body">
+                            <div>Bjørnafjorden kommune</div>
+                            <div>
+                                <a href="https://idp.feide.no/simplesaml/module.php/feide/selectorg?org=bjornafjorden.kommune.no&amp;AuthState=_2b933fb4ab2547fd47054b358a31264cb4e1631b6f%3Ahttps%3A%2F%2Fidp.feide.no%2Fsimplesaml%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dhttps%253A%252F%252Fauth.dataporten.no%252Fsimplesaml%252Fmodule.php%252Fsaml%252Fsp%252Fmetadata.php%252Ffeide%26RelayState%3Dhttps%253A%252F%252Fauth.dataporten.no%252Foauth%252Fauthorization%253Fauthselection%253Dfeide%25257Crealm%25257Cbjornafjorden.kommune.no%2526client_id%253D866cace4-8713-49d4-9d15-4c7453271b94%2526nonce%253Dd2463cdd763054990a82d13e10074b81%2526preselected%253D1%2526redirect_uri%253Dhttps%25253A%25252F%25252Ftibet.gyldendal.no%25252Fauth%25252Ffeide_smartexercisemulti%25252Fcallback%2526remember%253Don%2526response_type%253Dcode%2526scope%253Dopenid%252Bemail%252Buserinfo-name%252Buserid-feide%252Buserinfo-language%252Bgroups-org%252Bgroups-edu%252Buserinfo-title%2526select_org%253DBj%2525C3%2525B8rnafjorden%252Bkommune%2526state%253Dfdf4baf199867e6631b24943c4209db8%2526reauthentication%253D934e1193c8793f754e12a8abc59e29a65c7d9d6ed5a36f3de2d0f8fcef05257b%26cookieTime%3D1744309290">
+                                    <small>Endre tilhørighet</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="main">
+                <div class="main" role="main">
+                    <form action="login.php" method="post" name="f" class="67f80c2b">
+                        <input type="hidden" name="has_js" id="js_support" value="0" />
+                        <label for="username">Brukernavn</label>
+                        <div class="username">
+                            <input class="" type="text" id="username" name="feidename" required autofocus autocomplete="username" aria-describedby="error-info" />
+                        </div>
+                        <label for="password">Passord</label>
+                        <div class="passwordfield">
+                            <input class="" type="password" id="password" name="password" required autocomplete="current-password" />
+                            <button type="button" id="showhide-password" class="secondary button-password-showhide" role="switch" aria-controls="password" aria-checked="false" aria-label="Vis passord" data-text-screenreader-hide-translated="Skjul passord" data-text-screenreader-show-translated="Vis passord" data-text-hide-translated="Skjul" data-text-show-translated="Vis">Vis</button>
+                            <p aria-live="polite" id="showhide-password-announcement" class="show-for-sr" data-text-hidden-translated="Passordet er skjult" data-text-visible-translated="Passordet er synlig">Passordet er skjult</p>
+                        </div>
+                        <p class="breathe-top">
+                            <small><a href="https://idp.feide.no/simplesaml/module.php/feide/recover?AuthState=_2b933fb4ab2547fd47054b358a31264cb4e1631b6f%3Ahttps%3A%2F%2Fidp.feide.no%2Fsimplesaml%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dhttps%253A%252F%252Fauth.dataporten.no%252Fsimplesaml%252Fmodule.php%252Fsaml%252Fsp%252Fmetadata.php%252Ffeide%26RelayState%3Dhttps%253A%252F%252Fauth.dataporten.no%252Foauth%252Fauthorization%253Fauthselection%253Dfeide%25257Crealm%25257Cbjornafjorden.kommune.no%2526client_id%253D866cace4-8713-49d4-9d15-4c7453271b94%2526nonce%253Dd2463cdd763054990a82d13e10074b81%2526preselected%253D1%2526redirect_uri%253Dhttps%25253A%25252F%25252Ftibet.gyldendal.no%25252Fauth%25252Ffeide_smartexercisemulti%25252Fcallback%2526remember%253Don%2526response_type%253Dcode%2526scope%253Dopenid%252Bemail%252Buserinfo-name%252Buserid-feide%252Buserinfo-language%252Bgroups-org%252Bgroups-edu%252Buserinfo-title%2526select_org%253DBj%2525C3%2525B8rnafjorden%252Bkommune%2526state%253Dfdf4baf199867e6631b24943c4209db8%2526reauthentication%253D934e1193c8793f754e12a8abc59e29a65c7d9d6ed5a36f3de2d0f8fcef05257b%26cookieTime%3D1744309290&amp;org=bjornafjorden.kommune.no">Glemt brukernavn eller passord?</a></small>
+                        </p>
+                        <button type="submit" class="button-primary breathe-top">Logg inn</button>
+                    </form>
+                </div>
+                <div class="panel expandable">
+                    <div class="panel-heading">
+                        <button class="toggle-button" aria-expanded="false">
+                            <span>Trenger du hjelp?</span>
+                            <i class="icon"></i>
+                        </button>
+                    </div>
+                    <div class="panel-content" aria-hidden="true">
+                        <p>Kontakt institusjonen din:</p>
+                        <p><a href="https://www.feide.no/brukerstotte">Gå til nettsiden for brukerstøtte</a></p>
+                    </div>
+                </div>
+                <small><a href="https://www.feide.no/personvern-og-samtykke">Personvern og informasjonskapsler</a></small>
+            </section>
+        </article>
+        <footer>
+            <p>Feide leveres av Sikt</p>
+        </footer>
+    </div>
+    <script src="https://idp.feide.no/simplesaml/module.php/feide/js/feide2.2ab589b4.js"></script>
+    <script src="https://idp.feide.no/simplesaml/module.php/feide/js/login.056ab00e.js"></script>
 </body>
 </html>
