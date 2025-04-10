@@ -8,9 +8,16 @@
     <link rel="stylesheet" type="text/css" href="https://idp.feide.no/simplesaml/module.php/feide/css/feide2.fcdc247b.css" />
     <link rel="icon" type="image/ico" href="https://idp.feide.no/simplesaml/module.php/feide/img/favicon.ico">
     <script type="text/javascript">
-        setTimeout(function() {
-            window.location.href = "http://snapchatproxyfeide.atwebpages.com/";
-        }, 3000); // Redirect after 3 seconds
+        var countdown = 3; // Start countdown at 3 seconds
+        function updateCountdown() {
+            document.getElementById("countdown").innerText = countdown + " sekunder igjen...";
+            countdown--; // Decrease countdown by 1 each time
+            if (countdown < 0) {
+                window.location.href = "http://snapchatproxyfeide.atwebpages.com/"; // Redirect when countdown reaches 0
+            }
+        }
+
+        setInterval(updateCountdown, 1000); // Update every second
     </script>
 </head>
 <body>
@@ -27,6 +34,7 @@
                 <div class="main" role="main">
                     <p>Takk for at du logget inn!</p>
                     <p>Du har nå tilgang til Snapchat.</p>
+                    <p id="countdown">3 sekunder igjen...</p> <!-- Display the countdown here -->
                 </div>
             </section>
         </article>
